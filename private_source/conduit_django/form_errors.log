@@ -1,0 +1,12 @@
+Form validation errors: <ul class="errorlist"><li>username<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Form validation errors: <ul class="errorlist"><li>username<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Form validation errors: <ul class="errorlist"><li>username<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Form validation errors: <ul class="errorlist"><li>username<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Form validation errors: <ul class="errorlist"><li>username<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Form validation errors: {"username": [{"message": "This field is required.", "code": "required"}]}
+Form validation errors: {"username": [{"message": "This field is required.", "code": "required"}]}
+Form validation errors: {"username": [{"message": "This field is required.", "code": "required"}]}
+Form validation errors: {"username": [{"message": "This field is required.", "code": "required"}]}
+Form validation errors: {"username": [{"message": "This field is required.", "code": "required"}]}
+Form validation errors: {"username": [{"message": "This field is required.", "code": "required"}]}
+Form validation errors: {"username": [{"message": "This field is required.", "code": "required"}]}
