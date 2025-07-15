@@ -11,12 +11,13 @@ class Article(models.Model):
     slug = models.SlugField(max_length=100)
     title = models.CharField(max_length=100)
     description = models.TextField(blank=True, null=False)
-    body = models.TextField()
+    body = models.TextField(null=True, blank=True)
     createdAt = models.DateTimeField(auto_now_add=True)
     updatedAt = models.DateTimeField(auto_now=True)
-    favorited = models.BooleanField()
-    favoritesCount = models.IntegerField()
-    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    favorited = models.BooleanField(default=False)
+    favorites = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="favorites_user")
+    favoritesCount = models.IntegerField(default=0)
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="author_user")
     tags = models.ManyToManyField(Tag)
     
 

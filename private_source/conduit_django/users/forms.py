@@ -41,6 +41,13 @@ class UserForm(forms.Form):
     #     if not username.startswith("AAA"):
     #         raise ValidationError("your username is not valid")
     #     return username
-     
+class UserUpdateForm(forms.Form):
+    email = forms.CharField(max_length=100, required=False)
+    username = forms.CharField(max_length=100, required=False)
+    passsword = forms.CharField(max_length=100, required=False)
+    image = forms.Field(required=False)    
+    bio = forms.Field(required=False)
+
+   
 
     
